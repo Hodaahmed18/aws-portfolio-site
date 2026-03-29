@@ -16,4 +16,4 @@ A personal portfolio website hosted on AWS S3 with CloudFront CDN for HTTPS and 
 - Bash
 
 ## Live Site
-d1j4ndyxgzlxpi.cloudfront.net
+https://d1j4ndyxgzlxpi.cloudfront.net
