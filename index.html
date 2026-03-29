@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoda Xirsi | Cloud Engineer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff88;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container { max-width: 700px; padding: 40px; }
+        .prompt { color: #666; font-size: 14px; margin-bottom: 8px; }
+        h1 { font-size: 42px; margin-bottom: 8px; }
+        .subtitle { color: #888; margin-bottom: 40px; font-size: 16px; }
+        .section { margin-bottom: 32px; }
+        .section-title { color: #00ff88; font-size: 12px; letter-spacing: 3px; margin-bottom: 16px; border-bottom: 1px solid #222; padding-bottom: 8px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .tag { background: #111; border: 1px solid #00ff88; color: #00ff88; padding: 6px 14px; font-size: 13px; }
+        .project { background: #111; border-left: 3px solid #00ff88; padding: 16px; margin-bottom: 12px; }
+        .project h3 { font-size: 16px; margin-bottom: 6px; }
+        .project p { color: #888; font-size: 13px; line-height: 1.6; }
+        .cert { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .cert-badge { background: #00ff88; color: #0a0a0a; padding: 4px 10px; font-size: 11px; font-weight: bold; }
+        .cert p { color: #ccc; font-size: 14px; }
+        .footer { color: #333; font-size: 12px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="prompt">~/samiya $</div>
+    <h1>Hoda Xirsi</h1>
+    <p class="subtitle">Cloud Engineer in Training · London, UK</p>
+
+    <div class="section">
+        <div class="section-title">CERTIFICATIONS</div>
+        <div class="cert">
+            <div class="cert-badge">RHCSA</div>
+            <p>Red Hat Certified System Administrator</p>
+        </div>
+        <div class="cert">
+            <div class="cert-badge">IN PROGRESS</div>
+            <p>AWS Cloud Practitioner</p>
+        </div>
+       <div class="cert">
+            <div class="cert-badge">COMING SOON.</div>
+            <p>AWS Certified Solutions Architect - Associate</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">SKILLS</div>
+        <div class="tags">
+            <span class="tag">Linux (RHEL)</span>
+            <span class="tag">AWS</span>
+            <span class="tag">EC2</span>
+            <span class="tag">S3</span>
+            <span class="tag">IAM</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Bash</span>
+            <span class="tag">SSH</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PROJECTS</div>
+        <div class="project">
+            <h3>Static Website Hosting on AWS S3</h3>
+            <p>Configured an S3 bucket with public access policies and static website hosting. Deployed via AWS CLI from a RHEL EC2 instance.</p>
+        </div>
+    </div>
+
+    <div class="footer">Last updated: March 2026 · Hosted on AWS S3</div>
+</div>
+</body>
+</html>
