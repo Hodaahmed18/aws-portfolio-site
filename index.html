@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoda Xirsi | SOC Analyst</title>
+    <title>Hoda Xirsi | DevOps Engineer</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -28,6 +28,8 @@
         .project p { color: #888; font-size: 13px; line-height: 1.6; }
         .cert { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
         .cert-badge { background: #00ff88; color: #0a0a0a; padding: 4px 10px; font-size: 11px; font-weight: bold; }
+        .cert-badge.progress { background: #333; color: #00ff88; border: 1px solid #00ff88; }
+        .cert-badge.planned { background: #111; color: #666; border: 1px solid #333; }
         .cert p { color: #ccc; font-size: 14px; }
         .footer { color: #333; font-size: 12px; margin-top: 40px; }
     </style>
@@ -36,53 +38,81 @@
 <div class="container">
     <div class="prompt">~/hoda $</div>
     <h1>Hoda Xirsi</h1>
-    <p class="subtitle">SOC Analyst in Training · RHCSA Certified · London, UK</p>
+    <p class="subtitle">Junior DevOps Engineer · Sparta Global HTD · RHCSA Certified · London, UK</p>
+
     <div class="section">
         <div class="section-title">CERTIFICATIONS</div>
         <div class="cert">
             <div class="cert-badge">RHCSA</div>
-            <p>Red Hat Certified System Administrator</p>
+            <p>Red Hat Certified System Administrator — RHEL 10</p>
         </div>
         <div class="cert">
-            <div class="cert-badge">IN PROGRESS</div>
+            <div class="cert-badge progress">IN PROGRESS</div>
             <p>CompTIA Security+ (SY0-701)</p>
         </div>
         <div class="cert">
-            <div class="cert-badge">PLANNED</div>
-            <p>CompTIA CySA+ (Cybersecurity Analyst)</p>
+            <div class="cert-badge planned">PLANNED</div>
+            <p>AWS Solutions Architect Associate</p>
         </div>
     </div>
+
     <div class="section">
         <div class="section-title">SKILLS</div>
         <div class="tags">
-            <span class="tag">Linux (RHEL)</span>
-            <span class="tag">Log Analysis</span>
-            <span class="tag">Threat Detection</span>
-            <span class="tag">Incident Response</span>
-            <span class="tag">SIEM</span>
-            <span class="tag">SSH</span>
-            <span class="tag">Bash</span>
-            <span class="tag">AWS</span>
-            <span class="tag">IAM</span>
+            <span class="tag">Linux (RHEL & Ubuntu)</span>
+            <span class="tag">Bash Scripting</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">SSH & SCP</span>
+            <span class="tag">nginx</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">Git & GitHub</span>
             <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">pm2</span>
+            <span class="tag">IAM</span>
+            <span class="tag">Security Groups</span>
+            <span class="tag">VPC</span>
+            <span class="tag">Reverse Proxy</span>
+            <span class="tag">JSON & APIs</span>
         </div>
     </div>
+
     <div class="section">
         <div class="section-title">PROJECTS</div>
+
+        <div class="project">
+            <h3>Automated Node.js Deployment — AWS EC2</h3>
+            <p>Wrote a bash script to fully automate deployment of a Node.js app onto a fresh Ubuntu EC2 instance. Script installs nginx, Node.js v20, configures a reverse proxy via sed, and starts the app headlessly using pm2. Documented at github.com/Hodaahmed18/tictactoe-deployment.</p>
+        </div>
+
+        <div class="project">
+            <h3>SussedOut — AI-Powered Scam Detection</h3>
+            <p>Built and deployed an AI scam detection web tool using the Anthropic Claude API. Deployed on Netlify with a Cloudflare Worker proxy to resolve client-side API key exposure. Live at sussedout.co.uk.</p>
+        </div>
+
+        <div class="project">
+            <h3>Docker CI/CD Pipeline</h3>
+            <p>Configured a GitHub Actions pipeline that automatically builds and pushes a Docker image to Docker Hub on every push to main. Demonstrates real-world automation and containerisation workflow.</p>
+        </div>
+
+        <div class="project">
+            <h3>AWS Portfolio Site — S3 & CloudFront</h3>
+            <p>Deployed a static portfolio site to AWS S3 with CloudFront CDN distribution configured via CLI. IAM users created with least-privilege policies for secure access management.</p>
+        </div>
+
         <div class="project">
             <h3>SSH Brute Force Detection — Live Server</h3>
-            <p>Identified and analysed a real brute force attack on a live RHEL EC2 instance using journalctl. Verified server integrity by cross-referencing successful login logs and SSH key fingerprints.</p>
+            <p>Identified and analysed a real brute force attack on a live RHEL EC2 instance using journalctl. Verified server integrity by cross-referencing successful login logs and SSH key fingerprints. Documented in linux-lab repository.</p>
         </div>
+
         <div class="project">
-            <h3>Linux Security Lab — RHEL 10 on AWS EC2</h3>
-            <p>Built and hardened a RHEL 10 environment on AWS EC2. Configured SSH key authentication, analysed system logs, monitored services with systemctl, and documented security findings.</p>
-        </div>
-        <div class="project">
-            <h3>AWS IAM — Identity & Access Management</h3>
-            <p>Created IAM users with least-privilege policies via AWS CLI. Demonstrates understanding of identity management and access control — core security principles.</p>
+            <h3>Python TDD — Test Driven Development</h3>
+            <p>Built a suite of Python functions using TDD methodology with pytest. Functions include order tracking system with JSON persistence, postcode API integration with nested dictionary parsing, and data manipulation utilities.</p>
         </div>
     </div>
-    <div class="footer">Last updated: April 2026 · Hosted on AWS S3</div>
+
+    <div class="footer">Last updated: July 2026 · github.com/Hodaahmed18</div>
 </div>
 </body>
 </html>
